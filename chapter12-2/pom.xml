@@ -16,6 +16,14 @@
         <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
     </properties>
 
+    <modules>
+        <module>admin-server</module>
+        <module>eureka-client-one</module>
+        <module>eureka-client-two</module>
+        <module>eureka-server</module>
+        <module>turbine-service</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

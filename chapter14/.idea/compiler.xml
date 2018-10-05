@@ -12,11 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="chapter1" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="service-auth" target="1.8" />
       <module name="service-hi" target="1.8" />
-      <module name="service-ribbon" target="1.8" />
+      <module name="spring-cloud-auth" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

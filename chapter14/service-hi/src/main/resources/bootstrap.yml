@@ -21,6 +21,7 @@ spring:
 security:
   oauth2:
     resource:
+      #这个url在客户端从授权服务获取token之后会自动调用，用来获取用户信息
       user-info-uri: http://localhost:5000/uaa/users/current
 
     client:

@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin-server" />
         <module name="eureka-client-one" />
-        <module name="eureka-client-tweo" />
         <module name="eureka-client-two" />
         <module name="eureka-server" />
         <module name="turbine-service" />
@@ -18,7 +17,6 @@
       <module name="admin-server" target="1.8" />
       <module name="chapter12" target="1.8" />
       <module name="eureka-client-one" target="1.8" />
-      <module name="eureka-client-tweo" target="1.8" />
       <module name="eureka-client-two" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="turbine-service" target="1.8" />
