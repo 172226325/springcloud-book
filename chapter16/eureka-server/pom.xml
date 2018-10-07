@@ -41,8 +41,36 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.13</version>
+				<configuration>
+					<dockerHost>http://192.168.137.245:2375</dockerHost>
+					<!--<imageName>pwy/${project.artifactId}</imageName>-->
+					<!--发布到harbor使用-->
+					<imageName>192.168.137.6/pwy/${project.artifactId}:pwytag</imageName>
+					<dockerDirectory>src/main/docker</dockerDirectory>
+					<!--发布到harbor使用-->
+					<serverId>pwy-harbor</serverId>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
+
 		</plugins>
+
+
+
 	</build>
+
 
 
 </project>
